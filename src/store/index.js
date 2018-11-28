@@ -8,11 +8,11 @@ import state from './state'
 
 Vue.use(Vuex)
 
-const store = new Vuex.store({
+const store = new Vuex.Store({
   state,
   getters,
   actions,
-  mutations,
+  mutations
 })
 
 export default store
