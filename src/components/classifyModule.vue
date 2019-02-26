@@ -14,8 +14,5 @@ export default {
 
 <style lang="css">
   div.classifyModule {
-    width: 250px;
-    background: #ddd;
-    height: 100%;
   }
 </style>

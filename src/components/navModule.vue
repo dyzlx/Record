@@ -1,31 +1,32 @@
 <template lang="pug">
   div.navModule
-    img(src="")
-    div.title
+    img(src="../assets/img/Record.png")
+    tab-group(:nodeList="nodeList")
 </template>
 
 <script>
+import tabGroup from './common/tabGroup.vue'
 export default {
   data () {
     return {
-
+      nodeList: [
+        { name: '相册' },
+        { name: '日记' },
+        { name: '时间轴' }
+      ]
     }
+  },
+  components: {
+    tabGroup
   }
 }
 </script>
 
-<style lang="css">
+<style lang="scss">
   div.navModule{
-    width: 200px;
-    height: 70px;
-    background: #ddd;
+    padding: 5px;
     & img {
-
-    }
-    & div.title{
-      width: 200px;
-      height: 30px;
-      background: #fff;
+      margin: 0 35px;
     }
   }
 </style>

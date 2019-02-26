@@ -2,9 +2,10 @@
   div#app
     div#head
       nav-module
-    div#left
-      classify-module
     div#content
+      div#left
+      classify-module
+      div#right
       content-module
 </template>
 
@@ -30,20 +31,37 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 div#app{
   width: 100%;
   height: 100%;
   position: relative;
-  /* & div#head {
+  div#head {
     height: 70px;
     width: 100%;
-    background: #ddd;
   }
-  & div#left {
+  div#content {
     position: absolute;
+    left: 0;
+    bottom: 0;
     top: 70px;
-    border: 1px solid #ddd;
-  } */
+    width: 100%;
+    div#left {
+      width: 250px;
+      height: 100%;
+      position: absolute;
+    }
+    div#right {
+      position: absolute;
+      right: 0;
+      height: 100%;
+      width: auto;
+      left: 250px;
+      border: 2px solid #ccc;
+      border-right: 0;
+      border-bottom: 0;
+      border-radius: 10px 0 0 0;
+    }
+  }
 }
 </style>
