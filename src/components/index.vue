@@ -4,9 +4,9 @@
       nav-module
     div#content
       div#left
-      classify-module
+        classify-module
       div#right
-      content-module
+        content-module
 </template>
 
 <script>
@@ -39,6 +39,8 @@ div#app{
   div#head {
     height: 70px;
     width: 100%;
+    border-bottom: 2px solid #eee;
+    box-shadow: 0 5px 5px #000;
   }
   div#content {
     position: absolute;
@@ -46,6 +48,7 @@ div#app{
     bottom: 0;
     top: 70px;
     width: 100%;
+    background: #F8F8F8;
     div#left {
       width: 250px;
       height: 100%;
@@ -57,10 +60,11 @@ div#app{
       height: 100%;
       width: auto;
       left: 250px;
-      border: 2px solid #ccc;
-      border-right: 0;
-      border-bottom: 0;
-      border-radius: 10px 0 0 0;
+      /*border: 2px solid #ccc;*/
+      /*border-right: 0;*/
+      /*border-bottom: 0;*/
+      /*border-radius: 10px 0 0 0;*/
+      background: #fff;
     }
   }
 }
